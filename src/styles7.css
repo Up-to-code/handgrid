@@ -1,0 +1,44 @@
+.cta-banner {
+  position: relative; background: var(--red); color: #fff;
+  border-radius: var(--radius); padding: 90px 72px; overflow: hidden;
+  display: flex; align-items: center; min-height: 420px;
+}
+.cta-banner .pattern { position: absolute; inset: 0; opacity: .14; width: 100%; height: 100%; object-fit: cover; }
+.cta-banner .copy { position: relative; z-index: 2; max-width: 520px; }
+.cta-banner h2 { font-size: clamp(34px, 4vw, 52px); font-weight: 800; letter-spacing: -.03em; line-height: 1.12; }
+.cta-banner .btn { margin-top: 36px; }
+.cta-banner .man { position: absolute; right: 48px; bottom: 0; height: 110%; z-index: 1; }
+.cta-banner .man img { height: 100%; width: auto; }
+
+.site-footer { background: var(--navy); color: #fff; padding: 80px 0 40px; border-radius: var(--radius) var(--radius) 0 0; margin-top: 110px; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.3fr; gap: 48px; }
+.footer-grid h4 { font-size: 16px; font-weight: 700; margin-bottom: 22px; }
+.footer-grid a, .footer-grid p { display: block; color: #aeb8c0; font-size: 14.5px; margin-bottom: 12px; transition: color .2s; }
+.footer-grid a:hover { color: #fff; }
+.footer-contact { display: flex; align-items: flex-start; gap: 10px; color: #aeb8c0; font-size: 14.5px; margin-bottom: 16px; line-height: 1.6; }
+.footer-contact svg { flex: none; margin-top: 3px; }
+.footer-bottom {
+  border-top: 1px solid #2b3742; margin-top: 56px; padding-top: 28px;
+  display: flex; justify-content: space-between; align-items: center; color: #8d99a4; font-size: 14px;
+}
+.socials { display: flex; gap: 20px; }
+.socials a { color: #cfd6dc; font-weight: 600; font-size: 14.5px; }
+.socials a:hover { color: var(--red); }
+.footer-logo { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: 700; }
+.footer-logo img { height: 30px; }
+
+.reveal { will-change: transform, opacity; }
+
+@media (max-width: 1020px) {
+  .values-grid, .services-grid, .steps-grid, .reviews-grid, .blog-grid { grid-template-columns: repeat(2, 1fr); }
+  .split { grid-template-columns: 1fr; gap: 48px; }
+  .service-layout { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .cta-banner .man { display: none; }
+}
+@media (max-width: 640px) {
+  .nav { display: none; }
+  .values-grid, .services-grid, .steps-grid, .reviews-grid, .blog-grid, .stats-row, .field-row, .check-grid { grid-template-columns: 1fr; }
+  .cta-banner { padding: 56px 32px; }
+  .container { width: calc(100% - 40px); }
+}

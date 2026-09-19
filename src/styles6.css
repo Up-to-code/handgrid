@@ -1,0 +1,43 @@
+.contact-wrap { position: relative; margin-top: -120px; z-index: 5; padding-bottom: 110px; }
+.contact-form {
+  background: #fff; border-radius: var(--radius); padding: 44px;
+  box-shadow: 0 30px 80px rgba(13,20,26,.14); max-width: 780px; margin: 0 auto;
+  border: 1px solid var(--line);
+}
+.field { margin-bottom: 22px; }
+.field label { display: block; font-weight: 600; font-size: 14.5px; margin-bottom: 10px; }
+.field input, .field select, .field textarea {
+  width: 100%; padding: 16px 18px; border: 1.5px solid var(--line); border-radius: 12px;
+  font-family: var(--font); font-size: 15px; background: #fbfbfa; color: var(--ink);
+  outline: none; transition: border-color .25s ease, box-shadow .25s ease;
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  border-color: var(--red); box-shadow: 0 0 0 4px rgba(219,28,10,.1); background: #fff;
+}
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+
+.quote-card {
+  background: var(--navy); color: #fff; border-radius: var(--radius); padding: 40px 36px;
+  position: sticky; top: 32px;
+}
+.quote-card h3 { font-size: 26px; font-weight: 800; letter-spacing: -.02em; margin-bottom: 28px; }
+.quote-card .field label { color: #e8edef; }
+.quote-card .field input, .quote-card .field select {
+  background: var(--navy-2); border-color: #33404b; color: #fff;
+}
+.quote-card .field input::placeholder { color: #8d9aa5; }
+.quote-card .field input:focus { border-color: var(--red); box-shadow: 0 0 0 4px rgba(219,28,10,.25); }
+
+.service-layout { display: grid; grid-template-columns: 1.15fr .85fr; gap: 64px; align-items: start; margin-top: 72px; }
+.service-layout h2 { font-size: 28px; font-weight: 800; letter-spacing: -.02em; margin-bottom: 14px; margin-top: 44px; }
+.service-layout h2:first-child { margin-top: 0; }
+.service-layout .prose p { color: var(--grey); line-height: 1.85; font-size: 16.5px; margin-bottom: 18px; }
+.tick-list { list-style: none; margin-top: 18px; }
+.tick-list li { padding: 10px 0 10px 30px; position: relative; color: var(--ink); font-size: 15.5px; }
+.tick-list li::before {
+  content: ""; position: absolute; left: 0; top: 12px; width: 18px; height: 18px;
+  border-radius: 50%; background-color: var(--red);
+  background-image: url("/assets/asset-31.svg"); background-repeat: no-repeat; background-position: center; background-size: 9px;
+}
+.service-hero-img { border-radius: var(--radius); overflow: hidden; margin-top: 64px; aspect-ratio: 16/8; }
+.service-hero-img img { width: 100%; height: 100%; object-fit: cover; }
